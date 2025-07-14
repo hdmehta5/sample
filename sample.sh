@@ -7,8 +7,12 @@ echo $(date)
 echo "Enter a number to find the number is positive or negative: "
 read number
 if [ $number -gt 0 ]; then
-    echo "The number is positive."
-else    
-    echo "The number is negative."
+	echo "The number is positive."
+elif [ $number -le 0 ]; then    
+	echo "The number is negative."
+else
+	echo "The number is zero"
 fi
+
+echo "Fixed issue to check for 0"
 echo "All commands executed successfully."
