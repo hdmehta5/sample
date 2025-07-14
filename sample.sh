@@ -11,4 +11,5 @@ if [ $number -gt 0 ]; then
 else    
     echo "The number is negative."
 fi
+echo "This line will be displayed on userstory branch only"
 echo "All commands executed successfully."
